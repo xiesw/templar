@@ -1,0 +1,59 @@
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #cccccc;
+}
+
+.contentContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.textName {
+    display: flex;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.textDesc {
+    display: flex;
+    margin-top: 5px;
+    font-size: small;
+    color: gray;
+}
+
+.textApply {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: small;
+    color: gray;
+
+}
+
+.applyNumber {
+    display: flex;
+    margin-left: 5px;
+    font-size: small;
+    color: red;
+}
+
+.itemIcon {
+    display: flex;
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.itemArrow {
+    display: flex;
+    height: 20px;
+    align-self: center;
+    padding-right: 20px;
+}
