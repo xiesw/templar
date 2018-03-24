@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
 import '../style/App.css';
-import {BrowserRouter, Router, Route, Switch} from 'react-router-dom';
-import TestPage from "./TestPage";
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import AboutPage from "./AboutPage";
 import HomePage from "./HomePage";
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter component={HomePage}>
+      <BrowserRouter>
         <Switch>
-          <Route path="home" component={HomePage}/>
-          <Route path="test" component={TestPage}/>
+          <Route path="/about" component={AboutPage}/>
+
+          <Route path="/" component={HomePage}/>
         </Switch>
       </BrowserRouter>
     );

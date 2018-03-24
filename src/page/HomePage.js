@@ -36,6 +36,7 @@ export default class HomePage extends Component {
     return this.state.dataSource.map((item, index, arr) => {
       return (
         <Item
+          key={index}
           itemData={item}
         />
       );
@@ -43,9 +44,10 @@ export default class HomePage extends Component {
   }
 
   render() {
+    console.log('pain.xie', this.props);
     return (
       <div className="App">
-        <Header/>
+        <Header  {...this.props}/>
         {this.renderItem()}
       </div>
     );
