@@ -3,7 +3,7 @@
  */
 
 import React, {Component} from 'react';
-import '../style/HomePage.css';
+import '../style/AboutPage.css';
 
 export default class AboutPage extends Component {
 
