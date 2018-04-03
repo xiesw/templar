@@ -1,4 +1,5 @@
 .App {
     background: #eeeeee;
     max-width: 500px;
+    min-height: 750px;
 }

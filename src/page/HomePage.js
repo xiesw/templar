@@ -20,16 +20,20 @@ export default class HomePage extends Component {
   }
 
   componentDidMount() {
-    Api.getLoanList().then((response) => {
-      if (response) {
-        this.setState({
-          dataSource: response.resultList.rows
-        });
-        console.log('pain.xie', this.state.dataSource);
-      }
-    }).catch(error => {
-      console.log('pain.xie', error);
-    })
+    // Api.getLoanList().then((response) => {
+    //   if (response) {
+    //     this.setState({
+    //       dataSource: response.resultList.rows
+    //     });
+    //     console.log('pain.xie', this.state.dataSource);
+    //   }
+    // }).catch(error => {
+    //   console.log('pain.xie', error);
+    // })
+    let dataSource = Api.getLoanList();
+    this.setState({
+      dataSource: dataSource
+    });
   }
 
   renderItem() {
@@ -44,7 +48,6 @@ export default class HomePage extends Component {
   }
 
   render() {
-    console.log('pain.xie', this.props);
     return (
       <div className="App">
         <Header  {...this.props}/>
