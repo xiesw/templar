@@ -29,7 +29,10 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {},
+            options: {
+              name: '[name][md5:hash].[ext]',
+              outputPath: 'images/'
+            }
           },
         ],
         include: [
@@ -38,5 +41,5 @@ module.exports = {
         ]
       },
     ]
-  }
+  },
 };
