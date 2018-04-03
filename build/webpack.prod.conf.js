@@ -2,6 +2,7 @@ const merge = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
@@ -18,7 +19,10 @@ module.exports = merge(baseWebpackConfig, {
         removeAttributeQuotes: true
       }
     }),
-    new CleanWebpackPlugin(['../dist'],{allowExternal:true})
+    new CleanWebpackPlugin(['../dist'],{allowExternal:true}),
+    new CopyWebpackPlugin([
+      { from: 'public/favicon.ico', to: 'favicon.ico', },
+    ])
   ],
   optimization: {
     splitChunks: {
