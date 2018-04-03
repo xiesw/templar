@@ -34,7 +34,7 @@ export default class Item extends Component {
             <div className="applyNumber">{`${this.data.joincount}`}</div>
           </div>
         </div>
-        <img src={require('../image/rightarrow_.png')} className="itemArrow" alt="arrow"/>
+        <img src={require('../image/rightarrow.png')} className="itemArrow" alt="arrow"/>
       </div>
     );
   }
