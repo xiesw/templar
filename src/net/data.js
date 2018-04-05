@@ -43,6 +43,31 @@ export const data = [
     "applyUrl": "http://m.51credit.com/promote/wt20170918.html?tf=wt34",
     "code": "woaika"
   },
+
+  {
+    "joincount": "1589023",
+    "imagepath": "weilixin.png",
+    "name": "微粒信",
+    "recommendDesc": "零门槛，极速借",
+    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a ",
+    "code": "weilixin"
+  },
+  {
+    "joincount": "948920",
+    "imagepath": "zhongjinguanjia.png",
+    "name": "众金管家",
+    "recommendDesc": "成功率高，审批快",
+    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
+    "code": "zhongjinguanjia"
+  },
+  {
+    "joincount": "1238949",
+    "imagepath": "miaodaiwang.png",
+    "name": "秒贷王",
+    "recommendDesc": "芝麻分580，千元秒借领回家！",
+    "applyUrl": "http://p.creditxb.com/?h=TSmHGC",
+    "code": "miaodaiwang"
+  },
 ];
 
 export const getImage = (code) => {
@@ -57,5 +82,11 @@ export const getImage = (code) => {
       return require('../image/miaobaitiao.png');
     case 'woaika':
       return require('../image/woaika.png');
+    case 'weilixin':
+      return require('../image/weilixin.png');
+    case 'zhongjinguanjia':
+      return require('../image/zhongjinguanjia.png');
+    case 'miaodaiwang':
+      return require('../image/miaodaiwang.png');
   }
 };
