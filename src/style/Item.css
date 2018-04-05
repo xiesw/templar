@@ -30,11 +30,11 @@
 
 .textApply {
     display: flex;
+    align-items: center;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: small;
     color: gray;
-
 }
 
 .applyNumber {
@@ -46,6 +46,7 @@
 
 .itemIcon {
     display: flex;
+    align-self: center;
     margin: 10px;
     width: 60px;
     height: 60px;
