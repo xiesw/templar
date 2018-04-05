@@ -15,8 +15,8 @@ export default class Api {
     return data;
   }
 
-  static onEvent(eventId) {
-    let url = Http.getUrl('loan/api/log') + `?code=${eventId}`;
+  static onEvent(id,eventId) {
+    let url = Http.getUrl('loan/api/log') + `?id=${id}&code=${eventId}`;
     console.log('pain.xie', url);
     return Http.get(url);
   }

@@ -45,7 +45,6 @@ export default class Http {
    * @returns {Promise}
    */
   static processResponse(response) {
-      console.log('pain.xie', response);
     return new Promise((resolve, reject) => {
       let {status = 0} = response;
       if (status >= 200 && status < 400) {

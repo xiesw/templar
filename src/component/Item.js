@@ -10,6 +10,7 @@ import React, {Component} from 'react';
 import '../style/Item.css';
 import Api from "../net/Api";
 import {getImage} from "../net/data";
+import Utils from "../util/Utils";
 
 export default class Item extends Component {
 
@@ -20,7 +21,9 @@ export default class Item extends Component {
   }
 
   onClickItem() {
-    Api.onEvent(this.data.code)
+    let id = Utils.getId();
+    id = id ? id : '';
+    Api.onEvent(id, this.data.code)
       .then(response => {
         console.log('pain.xie', response);
       })
