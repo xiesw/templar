@@ -6,6 +6,9 @@ const webpack = require('webpack');
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'development',
+  entry: {
+    hot:'react-hot-loader/patch'
+  },
   output: {
     filename: "js/[name].[hash:16].js",
   },

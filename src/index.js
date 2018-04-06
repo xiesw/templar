@@ -3,7 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import App from "./page/App";
-import HomePage from "./page/HomePage";
+import {AppContainer} from 'react-hot-loader';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <AppContainer>
+    <App/>
+  </AppContainer>,
+  document.getElementById('root')
+);
+
+if (module.hot) {
+  module.hot.accept()
+}
+
 registerServiceWorker();
