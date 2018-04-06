@@ -69,24 +69,3 @@ export const data = [
     "code": "miaodaiwang"
   },
 ];
-
-export const getImage = (code) => {
-  switch(code) {
-    case 'fubaba':
-      return require('../image/fubaba.png');
-    case 'jiujiujie':
-      return require('../image/jiujiujie.png');
-    case 'tongyuansudai':
-      return require('../image/tongyuansudai.png');
-    case 'miaobaitiao':
-      return require('../image/miaobaitiao.png');
-    case 'woaika':
-      return require('../image/woaika.png');
-    case 'weilixin':
-      return require('../image/weilixin.png');
-    case 'zhongjinguanjia':
-      return require('../image/zhongjinguanjia.png');
-    case 'miaodaiwang':
-      return require('../image/miaodaiwang.png');
-  }
-};

@@ -9,7 +9,6 @@
 import React, {Component} from 'react';
 import '../style/Item.css';
 import Api from "../net/Api";
-import {getImage} from "../net/data";
 import Utils from "../util/Utils";
 
 export default class Item extends Component {
@@ -17,7 +16,6 @@ export default class Item extends Component {
   constructor(props) {
     super();
     this.data = props.itemData;
-    this.image = getImage(this.data.code);
   }
 
   onClickItem() {
@@ -39,7 +37,7 @@ export default class Item extends Component {
         className="itemContainer"
         onClick={() => this.onClickItem()}
       >
-        <img src={this.image} className="itemIcon" alt="icon"/>
+        <img src={require(`../image/${this.data.imagepath}`)} className="itemIcon" alt="icon"/>
         <div className="contentContainer">
           <div className="textName">{this.data.name}</div>
           <div className="textDesc">{this.data.recommendDesc}</div>
