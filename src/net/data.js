@@ -4,12 +4,28 @@
 
 export const data = [
   {
-    "joincount": "2123620",
-    "imagepath": "fubaba.png",
-    "name": "富爸爸闪贷",
-    "recommendDesc": "5分钟放款，通过率90%",
-    "applyUrl": "http://588.sourcecodefinance.com/origin/register?model%253D5%2526eid%253D204%2526c%253D246",
-    "code": "fubaba"
+    "joincount": "1589023",
+    "imagepath": "weilixin.png",
+    "name": "微粒信",
+    "recommendDesc": "零门槛，极速借",
+    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a ",
+    "code": "weilixin"
+  },
+  {
+    "joincount": "948920",
+    "imagepath": "zhongjinguanjia.png",
+    "name": "众金管家",
+    "recommendDesc": "成功率高，审批快",
+    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
+    "code": "zhongjinguanjia"
+  },
+  {
+    "joincount": "932890",
+    "imagepath": "tongyuansudai.png",
+    "name": "通源速贷",
+    "recommendDesc": "实名秒到，一键借款",
+    "applyUrl": "https://tongyuansudai.fanzhoutech.com/mobile/applyform?par=45968AD65BACA8AA8CE1B42A4071194C",
+    "code": "tongyuansudai"
   },
   {
     "joincount": "2323421",
@@ -20,12 +36,12 @@ export const data = [
     "code": "jiujiujie"
   },
   {
-    "joincount": "932890",
-    "imagepath": "tongyuansudai.png",
-    "name": "通源速贷",
-    "recommendDesc": "实名秒到，一键借款",
-    "applyUrl": "https://tongyuansudai.fanzhoutech.com/mobile/applyform?par=45968AD65BACA8AA8CE1B42A4071194C",
-    "code": "tongyuansudai"
+    "joincount": "2123620",
+    "imagepath": "fubaba.png",
+    "name": "富爸爸闪贷",
+    "recommendDesc": "5分钟放款，通过率90%",
+    "applyUrl": "http://588.sourcecodefinance.com/origin/register?model%253D5%2526eid%253D204%2526c%253D246",
+    "code": "fubaba"
   },
   {
     "joincount": "1723421",
@@ -42,23 +58,6 @@ export const data = [
     "recommendDesc": "万元额度，7天免息",
     "applyUrl": "http://m.51credit.com/promote/wt20170918.html?tf=wt34",
     "code": "woaika"
-  },
-
-  {
-    "joincount": "1589023",
-    "imagepath": "weilixin.png",
-    "name": "微粒信",
-    "recommendDesc": "零门槛，极速借",
-    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a ",
-    "code": "weilixin"
-  },
-  {
-    "joincount": "948920",
-    "imagepath": "zhongjinguanjia.png",
-    "name": "众金管家",
-    "recommendDesc": "成功率高，审批快",
-    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
-    "code": "zhongjinguanjia"
   },
   {
     "joincount": "1238949",
