@@ -8,8 +8,32 @@ export const data = [
     "imagepath": "weilixin.png",
     "name": "微粒信",
     "recommendDesc": "零门槛，极速借",
-    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a ",
+    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
     "code": "weilixin"
+  },
+  {
+    "joincount": "1348734",
+    "imagepath": "yangcongxinyong.png",
+    "name": "洋葱信用",
+    "recommendDesc": "无抵押，高通过",
+    "applyUrl": "http://channel.yangcongjietiao.com/channel/view/register.html?channel=jieyoubang",
+    "code": "yangcongxinyong"
+  },
+  {
+    "joincount": "893234",
+    "imagepath": "jiyonghebao.png",
+    "name": "急用荷包",
+    "recommendDesc": "芝麻分580，无逾期秒下",
+    "applyUrl": "http://business.haodaihome.com/haodai/loanCompanyHomePage?configCode=da6af473-ec6c-4dc0-82ac-7ea7d8d09cd9&channelCode=jieyoubang&agentId=54564",
+    "code": "jiyonghebao"
+  },
+  {
+    "joincount": "589238",
+    "imagepath": "dabaifenqi.png",
+    "name": "大白分期",
+    "recommendDesc": "拒就送，最高888元现金",
+    "applyUrl": "http://jsqb.kdqugou.com/newh5/web/html/landing-page4.html?source_tag=125",
+    "code": "dabaifenqi"
   },
   {
     "joincount": "948920",
