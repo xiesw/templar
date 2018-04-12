@@ -4,29 +4,20 @@
 
 export const data = [
   {
-    "joincount": "1589023",
-    "imagepath": "weilixin.png",
-    "name": "微粒信",
-    "recommendDesc": "零门槛，极速借",
-    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
-    "code": "weilixin"
+    "joincount": "896254",
+    "imagepath": "yimiaojie.png",
+    "name": "一秒借",
+    "recommendDesc": "全国无死角，放款快",
+    "applyUrl": "https://yimiaojie.geziqianbao.com/yimiaojie/inborrow/redirectindex?cid=268479551#&/yimiaojie/passport/register?cid=268479551",
+    "code": "yimiaojie"
   },
   {
-    "joincount": "690321",
-    "imagepath": "woaika.png",
-    "name": "我爱卡",
-    "recommendDesc": "万元额度，7天免息",
-    "applyUrl": "http://m.51credit.com/promote/wt20170918.html?tf=wt34",
-    "code": "woaika"
-  },
-
-  {
-    "joincount": "569832",
-    "imagepath": "kanglexiang.png",
-    "name": "康乐享",
-    "recommendDesc": "极速认证，最高两万",
-    "applyUrl": "http://lxbk.jjkswl.com/#/proxyReg?inviteCode=A100447",
-    "code": "kanglexiang"
+    "joincount": "2645741",
+    "imagepath": "tengfenqi.png",
+    "name": "腾分期",
+    "recommendDesc": "灵活分期，极速审核",
+    "applyUrl": "http://activity.10winner.com/cai_h5/landPage.html?key=682105",
+    "code": "tengfenqi"
   },
   {
     "joincount": "1579342",
@@ -36,7 +27,54 @@ export const data = [
     "applyUrl": "http://jyp.jjshanyin.com/#/proxyReg?inviteCode=A100248",
     "code": "juyian"
   },
-
+  {
+    "joincount": "296244",
+    "imagepath": "caiduobao.png",
+    "name": "财多宝",
+    "recommendDesc": "低息，极速放款",
+    "applyUrl": "https://cdb.nbxfkj.com/common/Invite?code=1142c533b2c84650971df6182cf8df09",
+    "code": "caiduobao"
+  },
+  {
+    "joincount": "1582343",
+    "imagepath": "kahuanwang.png",
+    "name": "卡还王",
+    "recommendDesc": "信用卡还款，轻松无压力",
+    "applyUrl": "http://www.kahuanwang.com/khw/c/r/Kmaolei_lianjie6",
+    "code": "kahuanwang"
+  },
+  {
+    "joincount": "569832",
+    "imagepath": "kanglexiang.png",
+    "name": "康乐享",
+    "recommendDesc": "极速认证，最高两万",
+    "applyUrl": "http://lxbk.jjkswl.com/#/proxyReg?inviteCode=A100447",
+    "code": "kanglexiang"
+  },
+  {
+    "joincount": "1589023",
+    "imagepath": "weilixin.png",
+    "name": "微粒信",
+    "recommendDesc": "零门槛，极速借",
+    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
+    "code": "weilixin"
+  },
+  {
+    "joincount": "596325",
+    "imagepath": "zhongxianghua.png",
+    "name": "众享花",
+    "recommendDesc": "5分钟申请，100秒到账",
+    "applyUrl": "http://www.dalaomen.com/Enjoy/template/reg.html?&t=jybgs",
+    "code": "zhongxianghua"
+  },
+  {
+    "joincount": "1236952",
+    "imagepath": "zhenyidai.png",
+    "name": "臻易贷",
+    "recommendDesc": "日息万三，万元额度",
+    "applyUrl": "http://47.98.47.208/act/light-loan-xjx?invite_code=NTIxMjg=&user_from=32",
+    "code": "zhenyidai"
+  },
   {
     "joincount": "948920",
     "imagepath": "zhongjinguanjia.png",
@@ -45,6 +83,8 @@ export const data = [
     "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
     "code": "zhongjinguanjia"
   },
+
+
   //
   // {
   //   "joincount": "1348734",
