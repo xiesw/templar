@@ -4,6 +4,55 @@
 
 export const data = [
   {
+    "joincount": "1589023",
+    "imagepath": "weilixin.png",
+    "name": "微粒信",
+    "recommendDesc": "零门槛，极速借",
+    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
+    "code": "weilixin"
+  },
+  {
+    "joincount": "569832",
+    "imagepath": "kanglexiang.png",
+    "name": "康乐享",
+    "recommendDesc": "极速认证，最高两万",
+    "applyUrl": "http://lxbk.jjkswl.com/#/proxyReg?inviteCode=A100447",
+    "code": "kanglexiang"
+  },
+  {
+    "joincount": "1236952",
+    "imagepath": "zhenyidai.png",
+    "name": "臻易贷",
+    "recommendDesc": "日息万三，万元额度",
+    "applyUrl": "http://47.98.47.208/act/light-loan-xjx?invite_code=NTIxMjg=&user_from=32",
+    "code": "zhenyidai"
+  },
+  {
+    "joincount": "1256246",
+    "imagepath": "xiaohuajinrong.png",
+    "name": "小花金融",
+    "recommendDesc": "芝麻分550，贷款秒下",
+    "applyUrl": "http://app.worldjunchi.com/web/mobile/smsproduct/list?pn=xhjr-dl",
+    "code": "xiaohuajinrong"
+  },
+  {
+    "joincount": "1582343",
+    "imagepath": "kahuanwang.png",
+    "name": "卡还王",
+    "recommendDesc": "信用卡还款，轻松无压力",
+    "applyUrl": "http://www.kahuanwang.com/khw/c/r/Kmaolei_lianjie6",
+    "code": "kahuanwang"
+  },
+  {
+    "joincount": "1579342",
+    "imagepath": "juyian.png",
+    "name": "聚易安",
+    "recommendDesc": "授信大额分期，随心所欲",
+    "applyUrl": "http://jyp.jjshanyin.com/#/proxyReg?inviteCode=A100248",
+    "code": "juyian"
+  },
+  {
+
     "joincount": "896254",
     "imagepath": "yimiaojie.png",
     "name": "一秒借",
@@ -20,62 +69,6 @@ export const data = [
     "code": "tengfenqi"
   },
   {
-    "joincount": "1579342",
-    "imagepath": "juyian.png",
-    "name": "聚易安",
-    "recommendDesc": "授信大额分期，随心所欲",
-    "applyUrl": "http://jyp.jjshanyin.com/#/proxyReg?inviteCode=A100248",
-    "code": "juyian"
-  },
-  {
-    "joincount": "296244",
-    "imagepath": "caiduobao.png",
-    "name": "财多宝",
-    "recommendDesc": "低息，极速放款",
-    "applyUrl": "https://cdb.nbxfkj.com/common/Invite?code=1142c533b2c84650971df6182cf8df09",
-    "code": "caiduobao"
-  },
-  {
-    "joincount": "1582343",
-    "imagepath": "kahuanwang.png",
-    "name": "卡还王",
-    "recommendDesc": "信用卡还款，轻松无压力",
-    "applyUrl": "http://www.kahuanwang.com/khw/c/r/Kmaolei_lianjie6",
-    "code": "kahuanwang"
-  },
-  {
-    "joincount": "569832",
-    "imagepath": "kanglexiang.png",
-    "name": "康乐享",
-    "recommendDesc": "极速认证，最高两万",
-    "applyUrl": "http://lxbk.jjkswl.com/#/proxyReg?inviteCode=A100447",
-    "code": "kanglexiang"
-  },
-  {
-    "joincount": "1589023",
-    "imagepath": "weilixin.png",
-    "name": "微粒信",
-    "recommendDesc": "零门槛，极速借",
-    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
-    "code": "weilixin"
-  },
-  {
-    "joincount": "596325",
-    "imagepath": "zhongxianghua.png",
-    "name": "众享花",
-    "recommendDesc": "5分钟申请，100秒到账",
-    "applyUrl": "http://www.dalaomen.com/Enjoy/template/reg.html?&t=jybgs",
-    "code": "zhongxianghua"
-  },
-  {
-    "joincount": "1236952",
-    "imagepath": "zhenyidai.png",
-    "name": "臻易贷",
-    "recommendDesc": "日息万三，万元额度",
-    "applyUrl": "http://47.98.47.208/act/light-loan-xjx?invite_code=NTIxMjg=&user_from=32",
-    "code": "zhenyidai"
-  },
-  {
     "joincount": "948920",
     "imagepath": "zhongjinguanjia.png",
     "name": "众金管家",
@@ -86,6 +79,24 @@ export const data = [
 
 
   //
+  // {
+  //   "joincount": "296244",
+  //   "imagepath": "caiduobao.png",
+  //   "name": "财多宝",
+  //   "recommendDesc": "低息，极速放款",
+  //   "applyUrl": "https://cdb.nbxfkj.com/common/Invite?code=1142c533b2c84650971df6182cf8df09",
+  //   "code": "caiduobao"
+  // },
+  //
+  //
+  // {
+  //   "joincount": "596325",
+  //   "imagepath": "zhongxianghua.png",
+  //   "name": "众享花",
+  //   "recommendDesc": "5分钟申请，100秒到账",
+  //   "applyUrl": "http://www.dalaomen.com/Enjoy/template/reg.html?&t=jybgs",
+  //   "code": "zhongxianghua"
+  // },
   // {
   //   "joincount": "1348734",
   //   "imagepath": "yangcongxinyong.png",
