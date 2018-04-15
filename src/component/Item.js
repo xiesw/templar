@@ -5,7 +5,6 @@
 import React, {Component} from 'react';
 import '../style/Item.css';
 import Api from "../net/Api";
-import Utils from "../util/Utils";
 import Http from "../net/Http";
 
 export default class Item extends Component {
@@ -17,21 +16,13 @@ export default class Item extends Component {
 
   onClickItem() {
     let id = localStorage.getItem('id');
-    console.log('pain.xie', 111111, id);
 
-    if(id) {
-      Api.onEvent(id, this.data.code)
-        .then(response => {
-          console.log('pain.xie', response);
-        })
-        .catch(error => {
-          console.log('pain.xie', error)
-        });
+    if (id) {
+      Api.onEvent(id, this.data.code);
       window.location.href = this.data.applyUrl;
     } else {
-      this.props.history.push('/login');
+      this.props.history.push({pathname: '/login', params: this.data});
     }
-
   }
 
   /**
@@ -48,8 +39,8 @@ export default class Item extends Component {
         onClick={() => this.onClickItem()}
       >
         <img
-          ref = 'img'
-          src={Http.getUrl(`static/image/${this.data.imagepath}`)}
+          ref='img'
+          src={Http.getImagePath(this.data.imagepath)}
           onError={() => this.onImgError()}
           className="itemIcon"
           alt="icon"

@@ -1,0 +1,17 @@
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    margin-top: 100px;
+}
+
+.button {
+    display: flex;
+    margin-top: 10px;
+}

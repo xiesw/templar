@@ -1,12 +1,16 @@
 /**
  * Created by pain on 2018/3/24.
  */
-import {Host} from "../common/Constants";
+import {Host, ImageHost} from "../common/Constants";
 
 export default class Http {
 
   static getUrl(url) {
     return Host + url
+  }
+
+  static getImagePath(imageName) {
+    return ImageHost + imageName;
   }
 
   static get (url) {
