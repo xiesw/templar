@@ -8,6 +8,7 @@ import Api from "../net/Api";
 import Global from "../common/Global";
 import Header from "../component/Header";
 import Item from "../component/Item";
+import {Icon, Modal, Button, Input, message} from 'antd';
 
 export default class HomePage extends Component {
 
@@ -15,8 +16,9 @@ export default class HomePage extends Component {
     super();
     Global.init();
     this.state = {
-      dataSource: []
-    }
+      dataSource: [],
+      modalVisible: false
+    };
   }
 
   componentDidMount() {
@@ -30,10 +32,49 @@ export default class HomePage extends Component {
     }).catch(error => {
       console.log('pain.xie', error);
     })
-    // let dataSource = Api.getLoanList();
-    // this.setState({
-    //   dataSource: dataSource
-    // });
+  }
+
+  onRegister() {
+    if (this.validate()) {
+      this.setModalVisible(false);
+      localStorage.setItem('id', this.mobile);
+      Api.onEvent(this.mobile, this.onClickData.code);
+      window.location.href = this.onClickData.applyUrl;
+    }
+  }
+
+  validate() {
+    this.mobile = document.getElementById("myInput").value;
+    let reg = /^1[3|4|5|6|7|8|9][0-9]\d{8}$/;
+    if (this.mobile) {
+      let result = reg.test(this.mobile);
+      if (result) {
+        return true;
+      } else {
+        message.warning('请输入正确的手机号码');
+      }
+    } else {
+      message.warning('请输入手机号');
+    }
+    return false;
+  }
+
+
+  onClickItem(data) {
+    let id = localStorage.getItem('id');
+    this.onClickData = data;
+    if (id) {
+      Api.onEvent(id, data.code);
+      window.location.href = data.applyUrl;
+    } else {
+      this.setModalVisible(true);
+    }
+  }
+
+  setModalVisible(visible) {
+    this.setState({
+      modalVisible: visible,
+    });
   }
 
   renderItem() {
@@ -43,9 +84,41 @@ export default class HomePage extends Component {
           key={index}
           itemData={item}
           history={this.props.history}
+          onClickItem={(data) => this.onClickItem(data)}
         />
       );
     })
+  }
+
+  renderModal() {
+    return (
+      <Modal
+        ref="modal"
+        title="输入手机号"
+        visible={this.state.modalVisible}
+        maskClosable='true'
+        onCancel={() => {
+          this.setModalVisible(false)
+        }}
+        footer={null}
+      >
+        <div className="inputContainer">
+          <Input
+            id="myInput"
+            prefix={<Icon type="phone" style={{color: 'rgba(0,0,0,.25)'}}/>}
+            className="homepage_input"
+            placeholder="请输入手机号码"
+            type="numberOfLines"
+          />
+          <Button
+            className='homepage_btn'
+            size="large"
+            type="primary"
+            onClick={() => this.onRegister()}
+          >登记</Button>
+        </div>
+      </Modal>
+    )
   }
 
   render() {
@@ -53,6 +126,7 @@ export default class HomePage extends Component {
       <div className="App">
         <Header  {...this.props}/>
         {this.renderItem()}
+        {this.renderModal()}
       </div>
     );
   }

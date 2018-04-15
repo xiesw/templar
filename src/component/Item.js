@@ -6,23 +6,13 @@ import React, {Component} from 'react';
 import '../style/Item.css';
 import Api from "../net/Api";
 import Http from "../net/Http";
+import {Modal} from 'antd';
 
 export default class Item extends Component {
 
   constructor(props) {
     super();
     this.data = props.itemData;
-  }
-
-  onClickItem() {
-    let id = localStorage.getItem('id');
-
-    if (id) {
-      Api.onEvent(id, this.data.code);
-      window.location.href = this.data.applyUrl;
-    } else {
-      this.props.history.push({pathname: '/login', params: this.data});
-    }
   }
 
   /**
@@ -36,7 +26,7 @@ export default class Item extends Component {
     return (
       <div
         className="itemContainer"
-        onClick={() => this.onClickItem()}
+        onClick={() => this.props.onClickItem(this.data)}
       >
         <img
           ref='img'

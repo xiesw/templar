@@ -17,6 +17,7 @@ export default class LoginPage extends Component {
     if(this.validate()) {
       localStorage.setItem('id', this.mobile);
       Api.onEvent(this.mobile, this.data.code);
+      this.props.history.goBack();
       window.location.href = this.data.applyUrl;
     }
   }
