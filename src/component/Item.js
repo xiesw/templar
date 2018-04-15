@@ -2,14 +2,11 @@
  * Created by pain on 2018/3/24.
  */
 
-/**
- * Created by pain on 2018/3/24.
- */
-
 import React, {Component} from 'react';
 import '../style/Item.css';
 import Api from "../net/Api";
 import Utils from "../util/Utils";
+import Http from "../net/Http";
 
 export default class Item extends Component {
 
@@ -31,13 +28,26 @@ export default class Item extends Component {
     window.location.href = this.data.applyUrl;
   }
 
+  /**
+   * 图片加载失败
+   */
+  onImgError() {
+    this.refs.img.src = require('../image/black.png');
+  }
+
   render() {
     return (
       <div
         className="itemContainer"
         onClick={() => this.onClickItem()}
       >
-        <img src={require(`../image/${this.data.imagepath}`)} className="itemIcon" alt="icon"/>
+        <img
+          ref = 'img'
+          src={Http.getUrl(`static/image/${this.data.imagepath}`)}
+          onError={() => this.onImgError()}
+          className="itemIcon"
+          alt="icon"
+        />
         <div className="contentContainer">
           <div className="textName">{this.data.name}</div>
           <div className="textDesc">{this.data.recommendDesc}</div>

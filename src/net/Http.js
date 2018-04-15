@@ -30,7 +30,11 @@ export default class Http {
   }
 
   static asyncGet(url) {
-    return fetch(url, {method: 'GET', headers: this.getHeaders()})
+    return fetch(url,
+      {
+        method: 'GET',
+        headers: this.getHeaders()
+      })
       .then(response => Http.processResponse(response));
   }
 

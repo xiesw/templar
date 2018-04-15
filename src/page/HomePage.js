@@ -20,20 +20,20 @@ export default class HomePage extends Component {
   }
 
   componentDidMount() {
-    // Api.getLoanList().then((response) => {
-    //   if (response) {
-    //     this.setState({
-    //       dataSource: response.resultList.rows
-    //     });
-    //     console.log('pain.xie', this.state.dataSource);
-    //   }
-    // }).catch(error => {
-    //   console.log('pain.xie', error);
-    // })
-    let dataSource = Api.getLoanList();
-    this.setState({
-      dataSource: dataSource
-    });
+    Api.getLoanList().then((result) => {
+      if (result) {
+        this.setState({
+          dataSource: result
+        });
+        console.log('pain.xie', this.state.dataSource);
+      }
+    }).catch(error => {
+      console.log('pain.xie', error);
+    })
+    // let dataSource = Api.getLoanList();
+    // this.setState({
+    //   dataSource: dataSource
+    // });
   }
 
   renderItem() {
