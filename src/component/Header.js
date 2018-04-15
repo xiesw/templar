@@ -8,7 +8,7 @@ import '../style/Header.css';
 export default class Header extends Component {
 
   onClickImg() {
-    //this.props.history.push('/about');
+    this.props.history.push('/about');
     //window.location.href = "https://segmentfault.com/q/1010000010581469";
   }
 

@@ -16,16 +16,22 @@ export default class Item extends Component {
   }
 
   onClickItem() {
-    let id = Utils.getId();
-    id = id ? id : '';
-    Api.onEvent(id, this.data.code)
-      .then(response => {
-        console.log('pain.xie', response);
-      })
-      .catch(error => {
-        console.log('pain.xie', error)
-      });
-    window.location.href = this.data.applyUrl;
+    let id = localStorage.getItem('id');
+    console.log('pain.xie', 111111, id);
+
+    if(id) {
+      Api.onEvent(id, this.data.code)
+        .then(response => {
+          console.log('pain.xie', response);
+        })
+        .catch(error => {
+          console.log('pain.xie', error)
+        });
+      window.location.href = this.data.applyUrl;
+    } else {
+      this.props.history.push('/login');
+    }
+
   }
 
   /**

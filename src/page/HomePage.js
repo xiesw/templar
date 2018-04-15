@@ -42,6 +42,7 @@ export default class HomePage extends Component {
         <Item
           key={index}
           itemData={item}
+          history={this.props.history}
         />
       );
     })
