@@ -7,13 +7,15 @@ import {data} from "./data";
 export default class Api {
 
   static getLoanList() {
-    // todo 切换地址
-    let url = 'https://www.easy-mock.com/mock/5ab5bb961a094046dab2caba/example/loanlist';
-    return Http.get(url);
-    //return data;
+    //let url = 'https://www.easy-mock.com/mock/5ab5bb961a094046dab2caba/example/loanlist';
+    //return Http.get(url);
+    return new Promise(resolve => {
+        resolve(data);
+      }
+    )
   }
 
-  static onEvent(id,eventId) {
+  static onEvent(id, eventId) {
     let url = Http.getUrl('loan/api/log') + `?id=${id}&code=${eventId}`;
     console.log('pain.xie', url);
     return Http.get(url);

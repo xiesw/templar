@@ -64,7 +64,13 @@ export default class HomePage extends Component {
     let id = localStorage.getItem('id');
     this.onClickData = data;
     if (id) {
-      Api.onEvent(id, data.code);
+      Api.onEvent(id, data.code)
+        .then(result => {
+          console.log('pain.xie:', result);
+        })
+        .catch(error => {
+          console.log('pain.xie:', error.message)
+        });
       window.location.href = data.applyUrl;
     } else {
       this.setModalVisible(true);
@@ -115,7 +121,7 @@ export default class HomePage extends Component {
             size="large"
             type="primary"
             onClick={() => this.onRegister()}
-          >登记</Button>
+          >提交</Button>
         </div>
       </Modal>
     )
