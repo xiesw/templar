@@ -9,6 +9,7 @@ import Global from "../common/Global";
 import Header from "../component/Header";
 import Item from "../component/Item";
 import {Icon, Modal, Button, Input, message} from 'antd';
+import Utils from "../util/Utils";
 
 export default class HomePage extends Component {
 
@@ -62,9 +63,10 @@ export default class HomePage extends Component {
 
   onClickItem(data) {
     let id = localStorage.getItem('id');
+    let platform = Utils.getPlatform();
     this.onClickData = data;
     if (id) {
-      Api.onEvent(id, data.code)
+      Api.onEvent(id, platform, data.code)
         .then(result => {
           console.log('pain.xie:', result);
         })
