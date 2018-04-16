@@ -7,9 +7,23 @@ import '../style/Header.css';
 
 export default class Header extends Component {
 
+  componentDidMount() {
+    this.count = 0;
+    this.show = false
+  }
+
   onClickImg() {
     //this.props.history.push('/about');
     //window.location.href = "https://segmentfault.com/q/1010000010581469";
+    if (!this.show) {
+      if (this.count >= 4) {
+        let VConsole = require('../util/log/vconsole.min.js');
+        let vConsole = new VConsole;
+        this.show = true;
+      } else {
+        this.count++
+      }
+    }
   }
 
   render() {
