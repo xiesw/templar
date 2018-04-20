@@ -8,7 +8,6 @@ import Api from "../net/Api";
 import Global from "../common/Global";
 import Header from "../component/Header";
 import Item from "../component/Item";
-import {Icon, Modal, Button, Input, message} from 'antd';
 import Utils from "../util/Utils";
 
 export default class HomePage extends Component {
@@ -18,7 +17,6 @@ export default class HomePage extends Component {
     Global.init();
     this.state = {
       dataSource: [],
-      modalVisible: false
     };
   }
 
@@ -35,37 +33,10 @@ export default class HomePage extends Component {
     })
   }
 
-  onRegister() {
-    if (this.validate()) {
-      this.setModalVisible(false);
-      localStorage.setItem('id', this.mobile);
-      Api.onEvent(this.mobile, this.onClickData.code);
-      window.location.href = this.onClickData.applyUrl;
-    }
-  }
-
-  validate() {
-    this.mobile = document.getElementById("myInput").value;
-    let reg = /^1[3|4|5|6|7|8|9][0-9]\d{8}$/;
-    if (this.mobile) {
-      let result = reg.test(this.mobile);
-      if (result) {
-        return true;
-      } else {
-        message.warning('请输入正确的手机号码');
-      }
-    } else {
-      message.warning('请输入手机号');
-    }
-    return false;
-  }
-
-
   onClickItem(data) {
-    let id = localStorage.getItem('id');
+    let id = Utils.getId();
     let platform = Utils.getPlatform();
     this.onClickData = data;
-    if (id) {
       Api.onEvent(id, platform, data.code)
         .then(result => {
           console.log('pain.xie:', result);
@@ -74,15 +45,6 @@ export default class HomePage extends Component {
           console.log('pain.xie:', error.message)
         });
       window.location.href = data.applyUrl;
-    } else {
-      this.setModalVisible(true);
-    }
-  }
-
-  setModalVisible(visible) {
-    this.setState({
-      modalVisible: visible,
-    });
   }
 
   renderItem() {
@@ -98,43 +60,11 @@ export default class HomePage extends Component {
     })
   }
 
-  renderModal() {
-    return (
-      <Modal
-        ref="modal"
-        title="输入手机号"
-        visible={this.state.modalVisible}
-        maskClosable='true'
-        onCancel={() => {
-          this.setModalVisible(false)
-        }}
-        footer={null}
-      >
-        <div className="inputContainer">
-          <Input
-            id="myInput"
-            prefix={<Icon type="phone" style={{color: 'rgba(0,0,0,.25)'}}/>}
-            className="homepage_input"
-            placeholder="请输入手机号码"
-            type="numberOfLines"
-          />
-          <Button
-            className='homepage_btn'
-            size="large"
-            type="primary"
-            onClick={() => this.onRegister()}
-          >提交</Button>
-        </div>
-      </Modal>
-    )
-  }
-
   render() {
     return (
       <div className="App">
         <Header  {...this.props}/>
         {this.renderItem()}
-        {this.renderModal()}
       </div>
     );
   }

@@ -6,7 +6,6 @@ import React, {Component} from 'react';
 import '../style/Item.css';
 import Api from "../net/Api";
 import Http from "../net/Http";
-import {Modal} from 'antd';
 
 export default class Item extends Component {
 
