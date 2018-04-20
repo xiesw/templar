@@ -12,6 +12,22 @@ export const data = [
     "code": "weilixin"
   },
   {
+    "joincount": "1256246",
+    "imagepath": "xiaohuajinrong.png",
+    "name": "小花金融",
+    "recommendDesc": "芝麻分550，贷款秒下",
+    "applyUrl": "http://app.worldjunchi.com/web/mobile/smsproduct/list?pn=xhjr-dl",
+    "code": "xiaohuajinrong"
+  },
+  {
+    "joincount": "948920",
+    "imagepath": "zhongjinguanjia.png",
+    "name": "众金管家",
+    "recommendDesc": "成功率高，审批快",
+    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
+    "code": "zhongjinguanjia"
+  },
+  {
     "joincount": "569832",
     "imagepath": "kanglexiang.png",
     "name": "康乐享",
@@ -28,20 +44,20 @@ export const data = [
     "code": "zhenyidai"
   },
   {
-    "joincount": "1256246",
-    "imagepath": "xiaohuajinrong.png",
-    "name": "小花金融",
-    "recommendDesc": "芝麻分550，贷款秒下",
-    "applyUrl": "http://app.worldjunchi.com/web/mobile/smsproduct/list?pn=xhjr-dl",
-    "code": "xiaohuajinrong"
-  },
-  {
     "joincount": "1582343",
     "imagepath": "kahuanwang.png",
     "name": "卡还王",
     "recommendDesc": "信用卡还款，轻松无压力",
     "applyUrl": "http://www.kahuanwang.com/khw/c/r/Kmaolei_lianjie6",
     "code": "kahuanwang"
+  },
+  {
+    "joincount": "596325",
+    "imagepath": "zhongxianghua.png",
+    "name": "众享花",
+    "recommendDesc": "5分钟申请，100秒到账",
+    "applyUrl": "http://www.dalaomen.com/Enjoy/template/reg.html?&t=jybgs",
+    "code": "zhongxianghua"
   },
   {
     "joincount": "1579342",
@@ -68,14 +84,6 @@ export const data = [
     "applyUrl": "http://activity.10winner.com/cai_h5/landPage.html?key=682105",
     "code": "tengfenqi"
   },
-  {
-    "joincount": "948920",
-    "imagepath": "zhongjinguanjia.png",
-    "name": "众金管家",
-    "recommendDesc": "成功率高，审批快",
-    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
-    "code": "zhongjinguanjia"
-  },
 
 
   //
@@ -89,14 +97,7 @@ export const data = [
   // },
   //
   //
-  // {
-  //   "joincount": "596325",
-  //   "imagepath": "zhongxianghua.png",
-  //   "name": "众享花",
-  //   "recommendDesc": "5分钟申请，100秒到账",
-  //   "applyUrl": "http://www.dalaomen.com/Enjoy/template/reg.html?&t=jybgs",
-  //   "code": "zhongxianghua"
-  // },
+
   // {
   //   "joincount": "1348734",
   //   "imagepath": "yangcongxinyong.png",
