@@ -12,22 +12,6 @@ export const data = [
     "code": "yaoqianshu"
   },
   {
-    "joincount": "1589023",
-    "imagepath": "weilixin.png",
-    "name": "微粒信",
-    "recommendDesc": "零门槛，极速借",
-    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
-    "code": "weilixin"
-  },
-  {
-    "joincount": "948920",
-    "imagepath": "zhongjinguanjia.png",
-    "name": "众金管家",
-    "recommendDesc": "成功率高，审批快",
-    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
-    "code": "zhongjinguanjia"
-  },
-  {
     "joincount": "596266",
     "imagepath": "kuaizu.png",
     "name": "快租",
@@ -44,28 +28,12 @@ export const data = [
     "code": "jiyuqianbao"
   },
   {
-    "joincount": "596551",
-    "imagepath": "baicaiqianbao.png",
-    "name": "百彩钱包",
-    "recommendDesc": "还款灵活，极速审核",
-    "applyUrl": "https://12i.cn/pG5iQ1",
-    "code": "baicaiqianbao"
-  },
-  {
     "joincount": "1692544",
     "imagepath": "xinyongrensheng.png",
     "name": "信用人生",
     "recommendDesc": "认证简单，通过率高",
     "applyUrl": "http://xyrsapi1.fengyjf.com/h5/invite.jsp?invitationCode=null&channelCode=jieyoubang",
     "code": "xinyongrensheng"
-  },
-  {
-    "joincount": "875456",
-    "imagepath": "weichuangjinrong.png",
-    "name": "微创金融",
-    "recommendDesc": "全国无死角，放款快",
-    "applyUrl": "http://suo.im/1zhlKq",
-    "code": "weichuangjinrong"
   },
   {
     "joincount": "496554",
@@ -75,6 +43,40 @@ export const data = [
     "applyUrl": "https://ylxd.yunlibeauty.com/ylxd/home?channelId=1283&cid=1335",
     "code": "xinshidai"
   },
+  {
+    "joincount": "1589023",
+    "imagepath": "weilixin.png",
+    "name": "微粒信",
+    "recommendDesc": "零门槛，极速借",
+    "applyUrl": "http://app.welixin.net/index.php/home/login/r/sign/9b4d5e7039f2b4c0dc06b021aa5e0b2a",
+    "code": "weilixin"
+  },
+  {
+    "joincount": "948920",
+    "imagepath": "zhongjinguanjia.png",
+    "name": "众金管家",
+    "recommendDesc": "成功率高，审批快",
+    "applyUrl": "http://zj.qianyoulu.cn/index.php/home/login/r/sign/14ff20c515e85802f0379e81bd07470c",
+    "code": "zhongjinguanjia"
+  },
+  {
+    "joincount": "596551",
+    "imagepath": "baicaiqianbao.png",
+    "name": "百彩钱包",
+    "recommendDesc": "还款灵活，极速审核",
+    "applyUrl": "https://12i.cn/pG5iQ1",
+    "code": "baicaiqianbao"
+  },
+
+  {
+    "joincount": "875456",
+    "imagepath": "weichuangjinrong.png",
+    "name": "微创金融",
+    "recommendDesc": "全国无死角，放款快",
+    "applyUrl": "http://suo.im/1zhlKq",
+    "code": "weichuangjinrong"
+  },
+
   //
   // {
   //   "joincount": "1256246",
