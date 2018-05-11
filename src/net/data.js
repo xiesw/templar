@@ -67,7 +67,6 @@ export const data = [
     "applyUrl": "https://12i.cn/pG5iQ1",
     "code": "baicaiqianbao"
   },
-
   {
     "joincount": "875456",
     "imagepath": "weichuangjinrong.png",
@@ -75,6 +74,22 @@ export const data = [
     "recommendDesc": "全国无死角，放款快",
     "applyUrl": "http://suo.im/1zhlKq",
     "code": "weichuangjinrong"
+  },
+  {
+    "joincount": "598985",
+    "imagepath": "fudimo.png",
+    "name": "伏地魔",
+    "recommendDesc": "让借钱更省心",
+    "applyUrl": "https://lwytg.seercf.com/t/2073.htm",
+    "code": "fudimo"
+  },
+  {
+    "joincount": "865654",
+    "imagepath": "jinyoujieqian.png",
+    "name": "今有借钱",
+    "recommendDesc": "1秒来钱 无抵押 0担保",
+    "applyUrl": "http://dai.imengkey.com/web_jyjq/q/NktlajViK242WUtt",
+    "code": "jinyoujieqian"
   },
 
   //
